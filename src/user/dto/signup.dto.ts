@@ -2,11 +2,11 @@ import { IsNotEmpty } from 'class-validator';
 
 export class SignUpDto {
   @IsNotEmpty()
-  name: string
+  name: string;
 
   @IsNotEmpty()
-  email: string
+  email: string;
 
   @IsNotEmpty()
-  password: string
+  password: string;
 }
