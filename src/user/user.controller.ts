@@ -6,6 +6,7 @@ import { SignUpDto } from './dto/signup.dto';
 export class UserController {
   constructor(private userService: UserService) {}
 
+  // Get all Users
   @Get()
   async getAllUsers() {
     return this.userService.findAll();
