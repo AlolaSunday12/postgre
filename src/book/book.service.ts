@@ -15,6 +15,7 @@ export class BookService {
     return this.bookRepository.find();
   }
 
+  // Create a book
   create(bookDto: CreateBookDto): Promise<Book> {
     const book = this.bookRepository.create(bookDto);
 
