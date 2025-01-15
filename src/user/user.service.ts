@@ -10,6 +10,7 @@ export class UserService {
     @InjectRepository(User) private userRepository: Repository<User>,
   ) {}
 
+  // Signup
   signup(userDto: SignUpDto): Promise<User> {
     const { name, email, password } = userDto;
 
