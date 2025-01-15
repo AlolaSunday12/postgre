@@ -1,6 +1,6 @@
 import { Optional } from '@nestjs/common';
 
-export class UpdateBookDto{
+export class UpdateBookDto {
   @Optional()
-  title: string
+  title: string;
 }
